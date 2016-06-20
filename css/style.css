@@ -8,15 +8,12 @@
   .wrapper .top, .wrapper .bottom {
     height: 50vh;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-    -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
-    -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
     .wrapper .top .square:nth-child(1) .color, .wrapper .bottom .square:nth-child(1) .color {
@@ -45,11 +42,11 @@
     margin: 30px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
     border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px; }
+    border-bottom-right-radius: 4px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15); }
     .wrapper .square .color {
       height: 130px;
       width: 130px;
@@ -57,6 +54,7 @@
       border-top-right-radius: 4px; }
     .wrapper .square .desc {
       color: black;
-      margin: 5px 10px; }
+      margin: 5px 10px;
+      box-shadow: none; }
       .wrapper .square .desc .hex {
         color: #7F7F7F; }
