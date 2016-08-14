@@ -1,23 +1,18 @@
 {
-"CodeKitInfo": "This is a CodeKit 3 project config file. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. Doing so will cause CodeKit to crash and\/or corrupt your project. I know it looks like JSON, but it is *not*. Many numbers in this file are 64-bit long long bitFlags, which JSON does not support. These numbers *cannot* be treated as discrete values and if you attempt to parse this file as standard JSON with any public JSON parser, these values will be corrupted. This file is not backwards-compatible with CodeKit 1 or 2. For more information, see https:\/\/codekitapp.com",
-"creatorBuild": "24306",
+"AAInfo": "This is a CodeKit 3 project config file. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. Doing so will cause CodeKit to crash and\/or corrupt your project. I know it looks like JSON, but it is *not*. Many numbers in this file are 64-bit long long bitFlags, which JSON does not support. These numbers *cannot* be treated as discrete values and if you attempt to parse this file as standard JSON with any public JSON parser, these values will be corrupted. This file is not backwards-compatible with CodeKit 1 or 2. For more information, see https:\/\/codekitapp.com",
+"buildSteps": [
+	{
+		"name": "Process All Remaining Files and Folders",
+		"stepType": 1,
+		"uuidString": "6842CE05-8EAF-49D4-A3C8-8F866B4E5397"
+		}
+	],
+"creatorBuild": "24745",
 "files": {
-	"\/codekit3.config": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/build\/codekit3.config",
-		"oF": 0
-		},
 	"\/colour_palette.sketch": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/build\/colour_palette.sketch",
-		"oF": 0
-		},
-	"\/config.codekit": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/build\/config.codekit",
 		"oF": 0
 		},
 	"\/css\/colour_palette.sass": {
@@ -94,10 +89,11 @@
 "projectAttributes": {
 	"creationDate": 488127743,
 	"displayValue": "colour_palette",
-	"displayValueWasSetByUser": 0,
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "meme-facepalm"
 	},
 "projectSettings": {
+	"abortBuildOnError": 1,
 	"alwaysUseExternalServer": 0,
 	"animateCSSInjections": 1,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
@@ -272,6 +268,9 @@
 			"active": 0
 			},
 		"react-jsx-compat": {
+			"active": 0
+			},
+		"react-jsx-self": {
 			"active": 0
 			},
 		"react-jsx-source": {
@@ -667,6 +666,10 @@
 			"active": 0,
 			"optionString": "{'code': 80, 'comments': 80, 'tabWidth': 4, 'ignoreUrls': true}"
 			},
+		"max-lines": {
+			"active": 0,
+			"optionString": "{'max': 300, 'skipBlankLines': true, 'skipComments': true}"
+			},
 		"max-nested-callbacks": {
 			"active": 0,
 			"optionString": "{'max': 10}"
@@ -678,6 +681,10 @@
 		"max-statements": {
 			"active": 0,
 			"optionString": "{'max': 10}, {'ignoreTopLevelFunctions': true}"
+			},
+		"multiline-ternary": {
+			"active": 0,
+			"optionString": ""
 			},
 		"new-cap": {
 			"active": 0,
@@ -910,6 +917,10 @@
 		"no-magic-numbers": {
 			"active": 0,
 			"optionString": "{'ignore': [], 'ignoreArrayIndexes': true, 'enforceConst': false, 'detectObjects': false}"
+			},
+		"no-mixed-operators": {
+			"active": 0,
+			"optionString": "{'groups': [['+', '-', '*', '\/', '%', '**'], ['&', '|', '^', '~', '<<', '>>', '>>>'], ['==', '!=', '===', '!==', '>', '>=', '<', '<='], ['&&', '||'], ['in', 'instanceof']], 'allowSamePrecedence': true}"
 			},
 		"no-mixed-requires": {
 			"active": 0,
@@ -1159,6 +1170,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-useless-rename": {
+			"active": 0,
+			"optionString": "{'ignoreDestructuring': false, 'ignoreImport': false, 'ignoreExport': false}"
+			},
 		"no-var": {
 			"active": 0,
 			"optionString": ""
@@ -1178,6 +1193,10 @@
 		"no-with": {
 			"active": 0,
 			"optionString": ""
+			},
+		"object-curly-newline": {
+			"active": 0,
+			"optionString": "{'ObjectExpression': {'multiline': true}, 'ObjectPattern': {'multiline': true}}"
 			},
 		"object-curly-spacing": {
 			"active": 0,
@@ -1255,6 +1274,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"rest-spread-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
 		"semi": {
 			"active": 0,
 			"optionString": "'always', {'omitLastInOneLineBlock': false}"
@@ -1303,6 +1326,10 @@
 			"active": 0,
 			"optionString": "'never'"
 			},
+		"unicode-bom": {
+			"active": 0,
+			"optionString": "'never'"
+			},
 		"use-isnan": {
 			"active": 1,
 			"optionString": ""
@@ -1337,6 +1364,7 @@
 			}
 		},
 	"externalServerAddress": "http:\/\/localhost:8888",
+	"hideConfigFile": 0,
 	"jsCheckerReservedNamesString": "",
 	"jsHintFlags2": {
 		"asi": {

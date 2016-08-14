@@ -1,5 +1,6 @@
 @import "bourbon"
 @import "colour_palette"
+@import 'https://fonts.googleapis.com/css?family=Lato'
 
 *
   margin: 0
@@ -8,12 +9,14 @@
 .wrapper
   min-height: 100vh
   width: 100vw
-  font-family: "Avenir"
+  font-family: "Lato", Avenir, sans-serif
+  line-height: 1.3
   .top
-    height: 50vh
+    min-height: 50vh
     display: flex
     justify-content: center
     align-items: center
+    flex-flow: row wrap
     .square
       &:nth-child(1)
         .color
